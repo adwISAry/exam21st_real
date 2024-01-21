@@ -1,0 +1,26 @@
+﻿@using Exam21st.Areas.Admin.ViewModels;
+@model ServicesCreateVM
+
+<h1>Create</h1>
+<form method="post" enctype="multipart/form-data" action="Create" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input class="form-control" asp-for="formFile">
+    </div>
+
+    <button type="submit" class="btn btn-primary"
+            asp-action="Create"
+            asp-controller="Services">
+        Create
+    </button>
+</form>   
